@@ -1,0 +1,9 @@
+<div class="container mt-4">
+    <div *ngIf="showBanner" class="alert alert-danger text-center">
+       <h2>Banner promocional! Não perca as oportunidades do dia!</h2>
+        <p>Ofertas por tempo limitado!</p> 
+    </div>
+</div>
+<div class="text-center mt-3">
+    <button class="btn btn-primary" (click)="alternarBanner()">{{ showBanner ? 'Ocultar banner' : 'Exibir banner' }}</button>
+</div>

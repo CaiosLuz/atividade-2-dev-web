@@ -4,35 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { MenuSuperior } from './menu-superior/menu-superior';
-import { Noticia } from './noticia/noticia';
-import { Destaque } from './destaque/destaque';
 import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ListarCliente } from './listar-cliente/listar-cliente';
 import { Home } from './home/home';
-import { Calculadora } from './calculadora/calculadora';
 import { PaginaNaoEncontrada } from './pagina-nao-encontrada/pagina-nao-encontrada';
-import { TelaPai } from './tela-pai/tela-pai';
-import { TelaFilho1 } from './tela-filho1/tela-filho1';
-import { TelaFilho2 } from './tela-filho2/tela-filho2';
-import { NoticiaDetalhe } from './noticia-detalhe/noticia-detalhe';
 import { FormsModule } from '@angular/forms';
-import { CalcularMedia } from './calcular-media/calcular-media';
+import { HomeComponent } from './home-component/home-component';
+import { ProdutoComponent } from './produto-component/produto-component';
+import { SobreComponent } from './sobre-component/sobre-component';
+import { ProdutoDetalheComponent } from './produto-detalhe-component/produto-detalhe-component';
 
 @NgModule({
   declarations: [
     App,
     MenuSuperior,
-    Noticia,
-    Destaque,
-    ListarCliente,
     Home,
-    Calculadora,
     PaginaNaoEncontrada,
-    TelaPai,
-    TelaFilho1,
-    TelaFilho2,
-    NoticiaDetalhe,
-    CalcularMedia
+    HomeComponent,
+    ProdutoComponent,
+    SobreComponent,
+    ProdutoDetalheComponent
   ],
   imports: [
     BrowserModule,

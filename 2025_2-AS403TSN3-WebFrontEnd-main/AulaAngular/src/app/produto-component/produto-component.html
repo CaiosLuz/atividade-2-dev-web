@@ -1,0 +1,28 @@
+<div class="container mt-4">
+
+    <div *ngIf="produtos.length === 0" class="alert alert-info text-center">
+        Nenhum produto encontrado!
+    </div>
+
+    <div class="row">
+
+      <div *ngFor="let produto of produtos" class="col-md-4 mb-4 d-flex justify-content-center">
+  
+          <div class="card" *ngIf="produtos.length > 0" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="..." >
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ produto.nome }}</h5>
+              <p class="card-text">{{ produto.descricao }}</p>
+              <p class="card-text">R${{ produto.preco | number:'1.2-2' }}</p>
+            </div>
+            <button 
+            class="btn w-100" [ngClass]="produto.emEstoque ? 'btn-success' : 'btn-secondary'" 
+            [disabled]="!produto.emEstoque"
+            (click)="comprarProduto(produto.id)">
+                {{ produto.emEstoque ? 'Comprar' : 'Sem estoque' }}
+            </button>
+          </div>
+      
+      </div>
+    </div>
+</div>
