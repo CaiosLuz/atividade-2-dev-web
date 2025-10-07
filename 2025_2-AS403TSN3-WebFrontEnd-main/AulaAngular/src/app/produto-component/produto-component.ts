@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class ProdutoComponent {
   produtos = [
-    { id: 1, nome: "Mouse Logitech", preco: 89, descricao: "Mouse Logitech sem fio", emEstoque: true },
-    { id: 2, nome: "Teclado Logitech", preco: 150, descricao: "Teclado Logitech sem fio", emEstoque: false },
-    { id: 3, nome: "Mouse Pad", preco: 39, descricao: "Mouse Pad em coro", emEstoque: true }
+    { id: 1, nome: "Notebook Acer Nitro 5", preco: 3000, descricao: "Notebook Acer Nitro 5 I5 14°gen 16ram", emEstoque: true },
+    { id: 2, nome: "Fone de ouvido JBL", preco: 150, descricao: "Fone de ouvido Bluetooth", emEstoque: true },
+    { id: 3, nome: "Iphone 17 PRO MAX", preco: 1099, descricao: "Iphone 17 PRO MAX 256GB", emEstoque: false }
   ];
 
   constructor(private router: Router){}
